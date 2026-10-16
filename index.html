@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Job Portal</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Find Your Dream Job</h2>
+        <p>Search for jobs and start your career today!</p>
+
+        <input type="text" id="searchJob"
+               placeholder="Enter job title">
+
+        <button onclick="searchJobs()">Search Jobs</button>
+    </section>
+
+    <section id="jobs">
+        <h2>Available Jobs</h2>
+
+        <div class="job">
+            <h3>Java Developer</h3>
+            <p>Company: TCS</p>
+            <p>Location: Hyderabad</p>
+            <button onclick="applyJob('Java Developer')">Apply Now</button>
+        </div>
+
+        <div class="job">
+            <h3>Web Developer</h3>
+            <p>Company: Infosys</p>
+            <p>Location: Hyderabad</p>
+            <button onclick="applyJob('Web Developer')">Apply Now</button>
+        </div>
+
+        <div class="job">
+            <h3>Software Engineer</h3>
+            <p>Company: Wipro</p>
+            <p>Location: Bengaluru</p>
+            <button onclick="applyJob('Software Engineer')">Apply Now</button>
+        </div>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Smart Job Portal helps job seekers find suitable jobs.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: smartjobportal@example.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Job Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
